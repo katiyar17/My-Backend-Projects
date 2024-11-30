@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Data</title>
+    <style>
+        table,
+        tr,
+        td {
+            border: 1px solid rgb(7, 2, 2);
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Email</th>
+            <th>Username</th>
+        </tr>
+
+        <form method="GET" action="/data/new">
+            <button>ADD NEW USER</button>
+        </form>
+
+        <% for(d of mydata) { %> 
+            <tr>
+                <td> <%= d.id %> </td>
+                <td> <%= d.email %> </td>
+                <td> <%= d.username %> </td>
+              <td>
+                <form method="GET" action="/data/<%= d.id %>/edit">
+                    <button>Edit</button>
+                </form>
+            </td>
+            <td>
+                
+            </td>
+            </tr>
+        <% } %> 
+
+    </table>
+
+</body>
+</html>
+

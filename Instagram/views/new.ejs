@@ -1,0 +1,20 @@
+<!-- new.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create new Post</title>
+</head>
+<body>
+    <h2>Create new Post</h2>
+
+    <form method="post" action="/posts">
+        <textarea placeholder="Enter caption" name="caption" required></textarea>
+        <textarea placeholder="Enter description" name="description" required></textarea>
+        <input type="text" placeholder="Enter image URL" name="image" required>
+        <button type="submit">Create</button>
+    </form>
+
+</body>
+</html>

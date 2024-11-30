@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <title>All posts</title>
+</head>
+<body>
+     
+    <h2>Instagram @</h2>
+    
+    <a href="http://localhost:8010/posts/new" class="create-post-link">Create New Post</a>
+  <%  for(post of posts) { %>
+        <div class="post"class="post" >
+
+            
+            <img src="<%= post.image %>" alt="Post Image">
+            <div class="post-content">
+                <h3><%= post.caption %></h3>
+                <p><%= post.description %></p>
+                <a href="http://localhost:8010/posts/<%= post.id %>" class="create-post-link">Check Your Post</a>
+                <a href="http://localhost:8010/posts/<%= post.id %>/edit" class="create-post-link">Edit</a>
+
+                <form method="post" action="/posts/<%= post.id %>/?_method=DELETE">
+                <button>delete</button>
+                </form>
+              
+            </div>
+           
+        </div>
+  <%}%>
+    
+
+</body>
+</html>

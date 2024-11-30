@@ -1,0 +1,63 @@
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    background-color: #fafafa;
+    color: #262626;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #E1306C; /* Instagram pink color */
+}
+
+.post {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    padding: 10px;
+}
+
+.post-content h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.post-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+a.create-post-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #E1306C; /* Instagram pink color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 27%; /* Adjust margin as needed */
+}
+
+a.create-post-link:hover {
+    background-color: #d81b60; /* Darker shade for hover effect */
+}
